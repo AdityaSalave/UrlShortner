@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.*;
 
         @PostMapping("/shorten")
         public ResponseEntity<String> shortenUrl(@RequestBody String originalUrl) {
+//            System.out.println(originalUrl);
+//            return ResponseEntity.ok(originalUrl);
             return ResponseEntity.ok(urlShortenerService.shortenUrl(originalUrl));
         }
 
