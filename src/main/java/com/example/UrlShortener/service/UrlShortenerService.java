@@ -4,6 +4,7 @@ import com.example.UrlShortener.model.Url;
 import com.example.UrlShortener.repository.UrlRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
